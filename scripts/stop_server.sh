@@ -1,6 +1,6 @@
 
 #!/bin/bash
-isExistApp=`pgrep java`
+isExistApp=`pgrep httpd`
 if [[ -n  $isExistApp ]]; then
-   service tomcat8 stop
+   systemctl stop httpd
 fi
