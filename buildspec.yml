@@ -11,14 +11,13 @@ phases:
       - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build started on `date`
-      - mvn install
+      - echo copy index.html file on `date`
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - 'target/ccdemo.war'
+    - 'index.html'
     - 'appspec.yml'
     - 'scripts/before_install.sh'
     - 'scripts/after_install.sh'    
