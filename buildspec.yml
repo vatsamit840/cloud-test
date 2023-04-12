@@ -7,7 +7,6 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-      - zip index.html.zip index.html
   build:
     commands:
       - echo copy index.html file on `date`
